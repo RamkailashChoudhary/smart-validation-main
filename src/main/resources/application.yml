@@ -1,0 +1,27 @@
+server:
+  port: 8981  # change to any port you want
+
+spring:
+  application:
+    name: smart-validation
+
+  ai:
+    openai:
+      api-key: ${GROQ_API_KEY}
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: llama-3.3-70b-versatile
+          temperature: 0.0
+          max-tokens: 150
+
+app:
+  validation:
+    default-confidence-threshold: 0.80
+    fallback-on-ai-failure: true
+    timeout-ms: 5000 # Groq is fast but give 5s to be safe
+
+logging:
+  level:
+    blog.bouguern.smartvalidation: DEBUG
+    org.springframework.ai: INFO

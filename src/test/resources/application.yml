@@ -1,0 +1,20 @@
+spring:
+  ai:
+    openai:
+      api-key: test-key-not-real
+      chat:
+        options:
+          model: gpt-4o-mini
+          temperature: 0.0
+          max-tokens: 150
+
+app:
+  validation:
+    default-confidence-threshold: 0.80
+    fallback-on-ai-failure: true
+    timeout-ms: 3000
+
+logging:
+  level:
+    com.yourname.smartvalidation: WARN
+    org.springframework.ai: WARN
