@@ -250,22 +250,3 @@ AiValidatorImpl
 ```
 
 All exceptions are handled centrally by `GlobalExceptionHandler` (`@RestControllerAdvice`).
-
----
-
-
-Read the full article on Medium: [Full Article](https://medium.com/@bouguern.mohamed/smart-rest-api-with-ai-semantic-validation-using-java-21-spring-boot-and-spring-ai-starter-model-25b504172396)
-
----
-
-## Author
-
-**Mohamed Bouguern** — Full-Stack Java/Angular & AI Integration Developer
-
-[Medium](https://medium.com/@bouguern.mohamed) · [LinkedIn](https://www.linkedin.com/in/mohamed-bouguern/) · [GitHub](https://github.com/bouguern)
-
----
-
-## License
-
-MIT License — feel free to use, modify, and distribute.
